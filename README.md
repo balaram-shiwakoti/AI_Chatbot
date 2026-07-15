@@ -65,8 +65,7 @@ Ensure you have **Python 3.8+** installed on your system.
 Clone this repository and install the required dependencies:
 
 ```bash
-pip install streamlit scikit-learn pandas
-
+pip install -r requirements.txt
 ```
 
 ### 3. Training the Brain
