@@ -1,0 +1,29 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "is anyone there", "greetings"],
+      "responses": ["Hello! How can I help you today?", "Hi there!", "Hey! What's up?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "i am leaving", "exit", "talk to you later"],
+      "responses": ["Goodbye! Have a great day.", "See you later!", "Take care!"]
+    },
+    {
+      "tag": "bot_name",
+      "patterns": ["what is your name", "who are you", "what can i call you", "tell me your name"],
+      "responses": ["I am your friendly AI Assistant.", "You can call me Chatbot v1."]
+    },
+    {
+      "tag": "python_help",
+      "patterns": ["what is python", "tell me about python", "why use python", "explain python"],
+      "responses": ["Python is a high-level programming language widely used in AI, data science, and web development due to its simplicity."]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["tell me a joke", "make me laugh", "do you know any jokes"],
+      "responses": ["Why do programmers wear glasses? Because they can't C#!", "Why did the computer go to the doctor? It had a virus!"]
+    }
+  ]
+}
