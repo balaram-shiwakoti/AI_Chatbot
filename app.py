@@ -20,12 +20,12 @@ vectorizer, model = load_chatbot_brain()
 
 # 2. Hardcoded fallback responses mapped to the intents we trained
 # (In a larger app, you would load these directly from your intents.json data file)
-responses_map = {
-    "greeting": ["Hello! How can I help you today?", "Hi there!", "Hey! What's up?"],
-    "goodbye": ["Goodbye! Have a great day.", "See you later!", "Bye! Take care."],
-    "bot_name": ["I am your friendly AI Assistant.", "You can call me Chatbot v1."],
-    "thanks": ["You're very welcome!", "Happy to help!", "Anytime!"]
-}
+# 2. Dynamically load responses directly from our data file
+with open("data/intents.json", "r") as file:
+    intents_data = json.load(file)
+
+# Build a mapping dictionary: {"greeting": ["Hello!", "Hi!"], "goodbye": [...]}
+responses_map = {intent["tag"]: intent["responses"] for intent in intents_data["intents"]}
 
 # 3. Maintain conversational history using Streamlit's built-in session state
 if "messages" not in st.session_state:
