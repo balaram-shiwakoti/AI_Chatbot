@@ -2,28 +2,66 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["hi", "hello", "hey", "good morning", "is anyone there", "greetings"],
-      "responses": ["Hello! How can I help you today?", "Hi there!", "Hey! What's up?"]
+      "patterns": [
+        "hi", "hello", "hey", "good morning", "is anyone there", "greetings",
+        "howdy", "sup", "hiya", "yo", "good evening", "good afternoon",
+        "what's up", "how are you", "nice to meet you", "hey there"
+      ],
+      "responses": ["Hello! How can I help you today?", "Hi there!", "Hey! What's up?", "Greetings! How can I assist you?"]
     },
     {
       "tag": "goodbye",
-      "patterns": ["bye", "goodbye", "see you later", "i am leaving", "exit", "talk to you later"],
-      "responses": ["Goodbye! Have a great day.", "See you later!", "Take care!"]
+      "patterns": [
+        "bye", "goodbye", "see you later", "i am leaving", "exit", "talk to you later",
+        "catch you later", "later", "gotta go", "i'm out", "see ya",
+        "adios", "farewell", "take it easy", "peace out"
+      ],
+      "responses": ["Goodbye! Have a great day.", "See you later!", "Take care!", "Farewell! Come back anytime."]
     },
     {
       "tag": "bot_name",
-      "patterns": ["what is your name", "who are you", "what can i call you", "tell me your name"],
-      "responses": ["I am your friendly AI Assistant.", "You can call me Chatbot v1."]
+      "patterns": [
+        "what is your name", "who are you", "what can i call you", "tell me your name",
+        "what should i call you", "do you have a name", "your name",
+        "who am i talking to", "what are you called", "give me your name",
+        "introduce yourself"
+      ],
+      "responses": ["I am your friendly AI Assistant.", "You can call me Chatbot v1.", "I'm your intelligent chatbot companion!"]
     },
     {
       "tag": "python_help",
-      "patterns": ["what is python", "tell me about python", "why use python", "explain python"],
-      "responses": ["Python is a high-level programming language widely used in AI, data science, and web development due to its simplicity."]
+      "patterns": [
+        "what is python", "tell me about python", "why use python", "explain python",
+        "what does python do", "is python good", "learn python",
+        "python programming", "what is python used for", "tell me about python language",
+        "why learn python", "python basics", "introduction to python"
+      ],
+      "responses": [
+        "Python is a high-level programming language widely used in AI, data science, and web development due to its simplicity.",
+        "Python is an interpreted, object-oriented language known for its easy-to-read syntax. It's great for beginners and experts alike!",
+        "Python is versatile! It's used in machine learning, automation, backend web development, and even game development."
+      ]
+    },
+     {
+      "tag": "time",
+      "patterns": [
+        "what time is it", "tell me the time", "current time", "what's the time", "can you tell me the time", "time now", "what's the current time",
+        "do you know the time", "give me the time", "time please", "what's the time now", "can you tell me the current time"
+      ],
+      "responses": ["The current time is 12:00 PM.", "It's currently 12:00 PM.", "The time is 12:00 PM."]
     },
     {
       "tag": "joke",
-      "patterns": ["tell me a joke", "make me laugh", "do you know any jokes"],
-      "responses": ["Why do programmers wear glasses? Because they can't C#!", "Why did the computer go to the doctor? It had a virus!"]
+      "patterns": [
+        "tell me a joke", "make me laugh", "do you know any jokes", "say something funny",
+        "joke please", "give me a joke", "tell me something hilarious", "crack a joke",
+        "joke time", "i want to laugh", "make me smile"
+      ],
+      "responses": [
+        "Why do programmers wear glasses? Because they can't C#!",
+        "Why did the computer go to the doctor? It had a virus!",
+        "What do you call a snake that builds websites? A python!"
+      ]
     }
   ]
 }

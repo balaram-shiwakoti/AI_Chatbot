@@ -5,7 +5,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
 # 1. Load the data from your JSON file
-# (If in Colab, make sure to upload your intents.json to your Colab workspace first)
 with open("data/intents.json", "r") as file:
     data = json.load(file)
 
@@ -28,7 +27,7 @@ X_train = vectorizer.fit_transform(df["text"])
 y_train = df["intent"]
 
 # 4. Train the Machine Learning Classifier
-model = LogisticRegression(C=1.0, max_iter=1000) # Added scale parameters for larger datasets
+model = LogisticRegression(C=10.0, max_iter=1000) # Added scale parameters for larger datasets
 model.fit(X_train, y_train)
 
 # 5. Package both components together
